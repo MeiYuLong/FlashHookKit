@@ -36,11 +36,11 @@ public enum FHEnvent {
 
 protocol FHLogEnvent {
     var name: String { get }
-    var param: [String: Any] { get }
+     var param: [String: Any] { get }
 }
 
 extension FHEnvent: FHLogEnvent {
-    var name: String {
+    public var name: String {
         switch self {
         case .signIn_A0101:
             return "A0101_sign_in"
@@ -63,7 +63,7 @@ extension FHEnvent: FHLogEnvent {
         }
     }
     
-    var param: [String : Any] {
+    public var param: [String : Any] {
         switch self {
         case .signIn_A0101,
              .applicationProgram_A0000,

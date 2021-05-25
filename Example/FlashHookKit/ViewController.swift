@@ -14,7 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        FHAnalysis.logEvent(event: .imageTextEditing_A0201)
+        FHAnalysis.shared.register { (event) in
+            debugPrint("\(event.name) , \(event.param)")
+        }
+        
+        FHAnalysis.shared.logEvent(event: .imageTextEditing_B0001(image_text_print_time: 999))
     }
 
     override func didReceiveMemoryWarning() {
