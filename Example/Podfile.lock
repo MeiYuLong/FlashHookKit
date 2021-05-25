@@ -1,0 +1,16 @@
+PODS:
+  - FlashHookKit (0.0.1)
+
+DEPENDENCIES:
+  - FlashHookKit (from `../`)
+
+EXTERNAL SOURCES:
+  FlashHookKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FlashHookKit: 13250ba1eec50e4ae37010cf00a4ee516e4c1982
+
+PODFILE CHECKSUM: ca11e4959adf14756755a3c32438f74878096bf6
+
+COCOAPODS: 1.10.0
